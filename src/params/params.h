@@ -68,6 +68,7 @@ typedef enum {
     ACTION_APP_FIELD, /* appended after CW_KBD: Field Ops (POTA/SOTA) */
     ACTION_APP_BANDS, /* appended after FIELD: the band overview of Field Ops alone */
     ACTION_APP_SNAKE, /* appended after BANDS: the hidden game (long press on APP > GPS) */
+    ACTION_APP_BIRDIE_CAL, /* Birdie & internal spur auto-calibration */
 } press_action_t;
 
 typedef enum {
@@ -116,6 +117,7 @@ typedef struct {
     params_bool_t       update_alert;
     params_bool_t       waterfall_center_line;
     params_bool_t       waterfall_zoom;
+    params_bool_t       birdie_filter;
     params_bool_t       mag_freq;
     params_bool_t       mag_info;
     params_bool_t       mag_alc;
